@@ -32,6 +32,7 @@ public class Main {
             choice = scanner.nextInt();
             scanner.nextLine(); // Считываем лишний перевод строки из буфера
 
+
             switch (choice) {
                 case 1:
                     // Посмотреть баланс
