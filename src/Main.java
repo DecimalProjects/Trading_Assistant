@@ -31,7 +31,6 @@ public class Main {
             System.out.print("Выберите действие: ");
             choice = scanner.nextInt();
             scanner.nextLine(); // Считываем лишний перевод строки из буфера
-
             switch (choice) {
                 case 1:
                     // Посмотреть баланс
