@@ -2,6 +2,7 @@
 import java.util.Scanner;// Импортируем класс Scanner из пакета java.util для получения пользовательского ввода
 public class Main { //Область исполнения кода программы)
 
+
     public static void main(String[] args) { //Здесь будут построчно исполняться строки кода
         Scanner scanner = new Scanner(System.in); // Создаем объект Scanner для считывания пользовательского ввода из консоли
         System.out.print("Как вас зовут? "); // Запрашиваем имя пользователя
