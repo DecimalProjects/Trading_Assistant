@@ -34,8 +34,8 @@ public class Price {
     public void updatePrices() {
         // Здесь может быть код для обращения к API биржи и получения актуальных цен и комиссии за сделку
         // В нашем случае мы просто установим фиктивные значения для примера
-        delRubPrice = 500000;
-        exchangeFee = 0.01;
+        delRubPrice = 2;
+        exchangeFee = 0.04;
         lastUpdated = LocalDateTime.now();
     }
 }

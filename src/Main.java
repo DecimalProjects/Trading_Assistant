@@ -1,35 +1,36 @@
-import java.util.Scanner;
 
-public class Main {
+import java.util.Scanner;// Импортируем класс Scanner из пакета java.util для получения пользовательского ввода
+public class Main { //Область исполнения кода программы)
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Как вас зовут? ");
-        String name = scanner.nextLine();
-        User user = new User(name);
-        TraderAssistant assistant = new TraderAssistant(name);
+    public static void main(String[] args) { //Здесь будут построчно исполняться строки кода
+        Scanner scanner = new Scanner(System.in); // Создаем объект Scanner для считывания пользовательского ввода из консоли
+        System.out.print("Как вас зовут? "); // Запрашиваем имя пользователя
+        String name = scanner.nextLine(); // Считываем имя пользователя
+        User user = new User(name); // Создаем объект User с именем пользователя
+        TraderAssistant assistant = new TraderAssistant(name); // Создаем объект TraderAssistant с именем пользователя и приветствуем его
         assistant.greetUser();
         System.out.print("Введите текущий фиатный депозит в рублях: ");
-        double rubBalance = scanner.nextDouble();
+        double rubBalance = scanner.nextDouble(); // Запрашиваем фиатный баланс пользователя
         scanner.nextLine();
         System.out.print("Введите количество монет DEL, которые у вас уже закуплены: ");
-        double delBalance = scanner.nextDouble();
+        double delBalance = scanner.nextDouble(); // Запрашиваем баланс монет DEL пользователя
         scanner.nextLine();
 
         System.out.print("Введите количество денег, которые были потрачены на закупку монет: ");
-        double spentMoney = scanner.nextDouble();
+        double spentMoney = scanner.nextDouble(); // Запрашиваем количество денег, которые были потрачены на покупку монет DEL
         scanner.nextLine();
 
-        Balance balance = new Balance(delBalance, rubBalance);
-        Statistics statistics = new Statistics(balance);
-        PortfolioManagement portfolioManagement = new PortfolioManagement(balance, null);
-        ProfitCalculation profitCalculation = new ProfitCalculation(balance, null);
+        Balance balance = new Balance(delBalance, rubBalance); // Создаем объект Balance с начальными балансами пользователя
+        Statistics statistics = new Statistics(balance); // Создаем объект Statistics для отслеживания статистики
+        PortfolioManagement portfolioManagement = new PortfolioManagement(balance, null); // Создаем объект PortfolioManagement для управления портфелем
+        ProfitCalculation profitCalculation = new ProfitCalculation(balance, null); // Создаем объект ProfitCalculation для расчета прибыли
 
-        int choice = 0;
-        while (choice != 5) {
-            printMenu(); // Печатаем меню
+
+        int choice = 0; // Инициализируем переменную choice
+        while (choice != 5) { // Запускаем бесконечный цикл while, который будет работать, пока пользователь не выберет выход из программы
+            printMenu(); // Выводим на экран меню доступных действий
             System.out.print("Выберите действие: ");
-            choice = scanner.nextInt();
+            choice = scanner.nextInt(); // Считываем выбор пользователя
             scanner.nextLine(); // Считываем лишний перевод строки из буфера
             switch (choice) {
                 case 1:
@@ -61,11 +62,12 @@ public class Main {
         }
     }
 
+    // Вспомогательный метод (функция) для печати меню
     public static void printMenu() {
         System.out.println("=================");
         System.out.println("Меню:");
         System.out.println("1. Посмотреть баланс");
-        System.out.println("2. Управление портфелем");
+        System.out.println("2. Записать сделку");
         System.out.println("3. Статистика");
         System.out.println("4. Расчет прибыли");
         System.out.println("5. Выход");
