@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="534f07bb-9d9a-4f27-aeb6-621e3d8dfc32" name="Changes" comment="Код закомментирован во всех классах для удобства его чтения">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="534f07bb-9d9a-4f27-aeb6-621e3d8dfc32" name="Changes" comment="Оптимизировал описание класса Main">
       <change beforePath="$PROJECT_DIR$/src/TraderAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TraderAssistant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678312651810</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Оптимизировал описание класса Main">
+      <created>1678315473760</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678315473760</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +126,7 @@
     <MESSAGE value="Пробуем делать комит в дев" />
     <MESSAGE value="Код заккоментирован во всех классах для удобства его чтения" />
     <MESSAGE value="Код закомментирован во всех классах для удобства его чтения" />
-    <option name="LAST_COMMIT_MESSAGE" value="Код закомментирован во всех классах для удобства его чтения" />
+    <MESSAGE value="Оптимизировал описание класса Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Оптимизировал описание класса Main" />
   </component>
 </project>
