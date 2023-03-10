@@ -6,7 +6,7 @@ public class Balance {
     public Balance(double delBalance, double rubBalance) {
         this.delBalance = delBalance;
         this.rubBalance = rubBalance;
-        this.spentMoney = 0; // Начальное значение spentMoney равно 0
+        this.spentMoney = 0;
     }
 
     public double getDelBalance() {
@@ -32,5 +32,13 @@ public class Balance {
     public double getSpentMoney() {
         return spentMoney;
     }
-}
 
+    public double getRemainingRubles() {
+        return rubBalance - spentMoney;
+    }
+
+    public void buyDEL(double rubles, double del) {
+        this.spentMoney += rubles;
+        this.delBalance += del;
+    }
+}
