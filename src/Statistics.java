@@ -1,4 +1,3 @@
-// Объявляем класс Statistics
 class Statistics {
     private Balance balance; // Создаем приватную переменную balance типа Balance, которая будет хранить информацию о балансе пользователя
 
@@ -9,11 +8,12 @@ class Statistics {
 
     // Создаем метод showStatistics, который выводит на экран статистику пользователя
     public void showStatistics() {
-        System.out.println("Статистика:");
+        System.out.println("Ваша актуальная Статистика:");
         System.out.println("Ваш фиатный депозит: " + balance.getRubBalance() + " RUB");
         System.out.println("Количество монет DEL, которые у вас уже закуплены: " + balance.getDelBalance());
         System.out.println("Количество денег, которые были потрачены на закупку монет: " + balance.getSpentMoney() + " RUB");
         System.out.println("Общая стоимость портфеля: " + calculatePortfolioValue() + " RUB");
+        System.out.println("Средняя стоимость монет DEL в вашем портфеле: " + calculateAverageDelValue() + " RUB");
     }
 
     // Создаем метод calculatePortfolioValue, который возвращает общую стоимость портфеля
@@ -22,5 +22,16 @@ class Statistics {
         // Мы просто вернем сумму крипто- и фиатного балансов для примера
         return balance.getDelBalance() + balance.getRubBalance();
     }
-}
 
+    // Создаем метод calculateAverageDelValue, который возвращает среднюю стоимость монет Del
+    public double calculateAverageDelValue() {
+        double delBalance = balance.getDelBalance();
+        if (delBalance == 0) { // Если у пользователя нет монет Del, возвращаем 0
+            return 0;
+        } else {
+            // Рассчитываем среднюю стоимость монет Del
+            double averageDelValue = balance.getRubBalance() / delBalance;
+            return averageDelValue;
+        }
+    }
+}
