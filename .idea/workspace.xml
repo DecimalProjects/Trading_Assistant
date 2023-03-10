@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="534f07bb-9d9a-4f27-aeb6-621e3d8dfc32" name="Changes" comment="Оптимизировал описание классов TraderAssistant, Balance">
+    <list default="true" id="534f07bb-9d9a-4f27-aeb6-621e3d8dfc32" name="Changes" comment="Добавил расчет средней стоимости монеты,теперь в статистике видно сколько было потречено фиата на закуп монет">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Balance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -127,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678317904574</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Добавил расчет средней стоимости монеты,теперь в статистике видно сколько было потречено фиата на закуп монет">
+      <created>1678438798251</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678438798252</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,7 +148,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="delvelop" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -162,6 +169,7 @@
     <MESSAGE value="Оптимизировал описание класса raderAssistant" />
     <MESSAGE value="Оптимизировал описание класса TraderAssistant" />
     <MESSAGE value="Оптимизировал описание классов TraderAssistant, Balance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Оптимизировал описание классов TraderAssistant, Balance" />
+    <MESSAGE value="Добавил расчет средней стоимости монеты,теперь в статистике видно сколько было потречено фиата на закуп монет" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил расчет средней стоимости монеты,теперь в статистике видно сколько было потречено фиата на закуп монет" />
   </component>
 </project>

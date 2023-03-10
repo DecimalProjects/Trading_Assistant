@@ -1,18 +1,35 @@
-class PortfolioManagement {
+import java.util.Scanner;
 
-    // приватное поле класса, тип - Balance
+public class PortfolioManagement {
+
     private Balance balance;
-    private Object portfolio; // приватное поле класса, тип - Object, для хранения информации о портфеле пользователя
+    private Object portfolio;
 
-    public PortfolioManagement(Balance balance, Object portfolio) { // конструктор класса с параметрами Balance и Object
-        this.balance = balance; // присваивание текущему объекту значения поля balance из параметров конструктора
-        this.portfolio = portfolio; // присваивание текущему объекту значения поля portfolio из параметров конструктора
+    public PortfolioManagement(Balance balance, Object portfolio) {
+        this.balance = balance;
+        this.portfolio = portfolio;
     }
 
-    public void managePortfolio() { // метод управления портфелем
-        System.out.println("Управление портфелем:"); // вывод сообщения на экран
-        // Здесь должен быть код для управления портфелем
-        // В нашем случае мы просто выведем сообщение
-        System.out.println("В разработке"); // вывод сообщения на экран
+    public void managePortfolio(Scanner scanner) {
+        System.out.println("Управление портфелем:");
+        System.out.println("1. Купить монету DEL");
+        int choice = scanner.nextInt();
+        switch (choice) {
+            case 1:
+                buyDEL(scanner);
+                break;
+            default:
+                System.out.println("Некорректный выбор");
+                break;
+        }
+    }
+
+    public void buyDEL(Scanner scanner) {
+        System.out.println("Введите сумму покупки монеты DEL в рублях: ");
+        double rubles = scanner.nextDouble();
+        System.out.println("Введите количество покупаемых монет DEL: ");
+        double del = scanner.nextDouble();
+        balance.buyDEL(rubles, del);
+        System.out.println("Монеты DEL успешно куплены.");
     }
 }
