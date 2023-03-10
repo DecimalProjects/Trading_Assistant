@@ -1,5 +1,7 @@
 class PortfolioManagement {
-    private Balance balance; // приватное поле класса, тип - Balance
+
+    // приватное поле класса, тип - Balance
+    private Balance balance;
     private Object portfolio; // приватное поле класса, тип - Object, для хранения информации о портфеле пользователя
 
     public PortfolioManagement(Balance balance, Object portfolio) { // конструктор класса с параметрами Balance и Object

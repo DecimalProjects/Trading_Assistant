@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="534f07bb-9d9a-4f27-aeb6-621e3d8dfc32" name="Changes" comment="Оптимизировал описание класса Main">
-      <change beforePath="$PROJECT_DIR$/src/TraderAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TraderAssistant.java" afterDir="false" />
+    <list default="true" id="534f07bb-9d9a-4f27-aeb6-621e3d8dfc32" name="Changes" comment="Оптимизировал описание классов TraderAssistant, Balance">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Balance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PortfolioManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PortfolioManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +99,35 @@
       <option name="project" value="LOCAL" />
       <updated>1678315473760</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Оптимизировал описание класса Main">
+      <created>1678316244601</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678316244601</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Оптимизировал описание класса raderAssistant">
+      <created>1678316739356</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678316739356</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Оптимизировал описание класса TraderAssistant">
+      <created>1678316865358</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678316865359</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Оптимизировал описание классов TraderAssistant, Balance">
+      <created>1678317904573</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678317904574</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +159,9 @@
     <MESSAGE value="Код заккоментирован во всех классах для удобства его чтения" />
     <MESSAGE value="Код закомментирован во всех классах для удобства его чтения" />
     <MESSAGE value="Оптимизировал описание класса Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Оптимизировал описание класса Main" />
+    <MESSAGE value="Оптимизировал описание класса raderAssistant" />
+    <MESSAGE value="Оптимизировал описание класса TraderAssistant" />
+    <MESSAGE value="Оптимизировал описание классов TraderAssistant, Balance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Оптимизировал описание классов TraderAssistant, Balance" />
   </component>
 </project>
